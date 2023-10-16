@@ -1,0 +1,28 @@
+{
+  "tasks": [
+    {
+      "id": "1",
+      "text": "Buy some milk"
+    },
+    {
+      "id": "3",
+      "text": "Go to the shops"
+    },
+    {
+      "id": "4",
+      "text": "Make a smoothie"
+    },
+    {
+      "id": "5",
+      "text": "Take the dog for a walk"
+    },
+    {
+      "id": "f956cc5a-db3d-4b9b-b818-4bdd8835faba",
+      "text": "learn next js"
+    },
+    {
+      "id": "44084c0e-9ead-4bf7-871b-92a5d03eff1c",
+      "text": "Make some music"
+    }
+  ]
+}

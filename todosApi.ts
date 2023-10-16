@@ -1,14 +1,14 @@
-import { ITask } from "./types/todos";
+import { ITodo } from "./types/todos";
 
 const baseUrl = 'http://localhost:3001';
 
-export const getAllTodos = async (): Promise<Array<ITask>> => {
+export const getAllTodos = async (): Promise<Array<ITodo>> => {
     const res = await fetch(`${baseUrl}/tasks`, { cache: 'no-store' });
     const todos = await res.json();
     return todos;
 }
 
-export const addTodo = async (todo: ITask): Promise<ITask> => {
+export const addTodo = async (todo: ITodo): Promise<ITodo> => {
     const res = await fetch(`${baseUrl}/tasks`, {
         method: 'POST',
         headers: {
@@ -20,7 +20,7 @@ export const addTodo = async (todo: ITask): Promise<ITask> => {
     return newTodo;
 }
 
-export const editTodo = async (todo: ITask): Promise<ITask> => {
+export const editTodo = async (todo: ITodo): Promise<ITodo> => {
     const res = await fetch(`${baseUrl}/tasks/${todo.id}`, {
         method: 'PUT',
         headers: {

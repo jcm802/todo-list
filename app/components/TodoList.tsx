@@ -3,11 +3,11 @@ import React from 'react'
 import Task from './Todo'
 
 interface TodoListProps {
-    tasks: Array<ITodo>
+    todos: Array<ITodo>
 }
 
 export default function TodoList({
-    tasks,
+    todos,
 }: TodoListProps): JSX.Element {
   return (
     <div className="overflow-x-auto">
@@ -20,8 +20,8 @@ export default function TodoList({
       </tr>
     </thead>
     <tbody>
-      {tasks.map((task) => (
-        <Task key={task.id} task={task} />
+      {todos.map((todo) => (
+        <Task key={todo.id} task={todo} />
       ))}
     </tbody>
   </table>

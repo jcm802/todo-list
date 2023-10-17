@@ -2,6 +2,7 @@ import Image from 'next/image'
 import AddTask from './components/AddTodo'
 import TodoList from './components/TodoList'
 import { getAllTodos } from '@/todosApi'
+export const runtime = "edge"
 
 export default async function Home() {
   const todos = await getAllTodos();

@@ -1,6 +1,6 @@
 import { ITodo } from "./types/todos";
 
-const baseUrl = 'http://127.0.0.1:1337';
+const baseUrl = 'http://localhost:3001';
 
 export const getAllTodos = async (): Promise<Array<ITodo>> => {
     const res = await fetch(`${baseUrl}/tasks`, { cache: 'no-store' });

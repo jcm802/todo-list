@@ -1,10 +1,6 @@
 {
   "tasks": [
     {
-      "id": "1",
-      "text": "Buy some milk"
-    },
-    {
       "id": "3",
       "text": "Go to the shops"
     },
